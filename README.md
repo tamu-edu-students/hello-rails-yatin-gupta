@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is an introduction to Rails !
 
-Things you may want to cover:
+* Ruby version - 2.7.2
 
-* Ruby version
+Install Dependencies
+```shell
+bundle install
+```
 
-* System dependencies
+Running migrations
+```
+rake db:migrate
+```
 
-* Configuration
+Heroku commands
+```
+heroku run rails db:migrate
+heroku stack:set heroku-20 --app hello-world-rails-yatin // since rails 2.7.2 is not supported on heroku 22
+```
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
